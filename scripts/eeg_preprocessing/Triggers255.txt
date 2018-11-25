@@ -1,0 +1,74 @@
+Triggers
+
+CUE = Condition
+Cue		Doors contain Prize	FB
+11		1			pos
+12		1    			neg
+21		2			pos
+22		2    			neg			
+31		3			pos
+32		3    			neg	
+
+
+Catches 	Response
+Cue		88
+FB		99
+
+ 		Response
+Door		44
+					Preceding FB
+Retry Resp No 	222			neg			
+	   Yes  228			neg
+
+		Onset
+RetrySlide	50
+
+
+Feedback (Condition +100)
+131		3			FB pos	
+132		3			FB neg		
+121		2			FB pos		
+122		2			FB neg		
+111		1			FB pos	
+112		1			FB neg	
+
+Breaks start     Breaks End
+255		254
+
+	
+	- Special case -
+
+Cue (Condition + 20)
+		
+
+41		2			pos
+42		2    			neg			
+
+
+Feedback (Condition + 120)
+	
+141		2			FB pos		
+142		2			FB neg		
+
+
+ 		Response
+Door		45
+
+
+	- Extra trial -
+
+Cue (Condition + 40)
+		
+
+61		2			pos
+62		2    			neg			
+
+
+Feedback (Condition + 140)
+	
+161		2			FB pos		
+162		2			FB neg		
+
+
+ 		Response
+Door		46
